@@ -1,0 +1,44 @@
+{
+  "name": "use-bn-idle",
+  "version": "1.0.11",
+  "description": "React User Idle Hook to find user idle/session timeout",
+  "author": {
+    "name": "bearnithi",
+    "email": "bearnithi@gmail.com",
+    "url": "https://bearnithi.com"
+  },
+  "keywords": [
+    "react idle hook",
+    "react user idle hook",
+    "react session timeout hook",
+    "react user idle find",
+    "react activity detector hook"
+  ],
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "./index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup -c"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^21.0.2",
+    "@rollup/plugin-node-resolve": "^13.1.3",
+    "@rollup/plugin-typescript": "^8.3.1",
+    "@types/react": "^17.0.40",
+    "react": "^17.0.2",
+    "rollup": "^2.70.1",
+    "rollup-plugin-dts": "^4.2.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-terser": "^7.0.2",
+    "typescript": "^4.6.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bearnithi/use-bn-idle"
+  },
+  "bugs": {
+    "url": "https://github.com/bearnithi/use-bn-idle/issues"
+  }
+}
