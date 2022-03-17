@@ -18,16 +18,25 @@ The `stopTimer` function is used to stop the user idle detection (manually).
 The `expired` callback function as a parameter for the `useBnIdle` hook gets triggered if the user is inactive for a certain period of time that we specified in `startTimer` function.
 
 ```javascript
-    const [startTimer, stopTimer] = useBnIdle(() => {
-      //Will execute if the user is idle for a certain period of time.
-      //You can write logic like showing popup or log out the user.
-      console.log('Expired: Session Timeout');
-    })
-    
-    useEffect(() => {
-      // start the user idle detection
-      startTimer(60); //passed 60 seconds as argument.
-    })
+    import useBnIdle from 'use-bn-idle';
+
+    const App = () => {
+      const [startTimer, stopTimer] = useBnIdle(() => {
+        //Will execute if the user is idle for a certain period of time.
+        //You can write logic like showing popup or log out the user.
+        console.log('Expired: Session Timeout');
+      })
+      
+      useEffect(() => {
+        // start the user idle detection
+        startTimer(60); //passed 60 seconds as argument.
+      })
+
+      return <div>
+        <button onClick={stopTimer}>Stop Detection</button>
+      </div>
+    }
+
 ```
 
 ### Return Values from the hook
